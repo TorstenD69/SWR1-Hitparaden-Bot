@@ -132,3 +132,7 @@ local.settings.json
 # VS Code Artifacts
 .vscode
 azure_functions
+
+# Misc
+setup.py
+test.http
