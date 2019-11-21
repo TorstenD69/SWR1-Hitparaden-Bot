@@ -22,11 +22,11 @@ send /hilfe to the bot.
 To create a bot, you have to use a telegram bot called [BotFather](https://telegram.me/botfather). Theses are the commands
 I used to create my Bot.
 
-| command         | input values                                                                                                                                                                                                                             |
-|-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| /newbot         | name: SWR1 Hitparade <br> username: mySWR_Hit_Bot                                                                                                                                                                                        |
-| /setdescription | Du willst wissen, wer Platz 100 in der Hitparade war oder wie viele Titel Queen in der Hitparade hatte. Dann bist Du hier genau richtig. Mit diesem Bot kannst Du nach Titeln, Künstlern und Platzierungen in der SWR1 Hitparade suchen. |
-| /setcommands    | platz - Gesuchte Platzierung<br>titel - Name des gesuchten Titels<br>musiker - Musiker- oder Bandname<br>anzahl - Musiker- oder Bandname<br>10 - Anzeige der Top Ten                                                                     |
+| command         | input values                                                                                                                                                                                                                                |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| /newbot         | name: SWR1 Hitparade <br> username: mySWR_Hit_Bot                                                                                                                                                                                           |
+| /setdescription | Du willst wissen, wer Platz 100 in der Hitparade war oder wie viele Titel Queen in der Hitparade hatte. Dann bist Du hier genau richtig. Mit diesem Bot kannst Du nach Titeln, Künstlern und Platzierungen in der SWR1 Hitparade suchen.    |
+| /setcommands    | platz - Gesuchte Platzierung<br>titel - Name des gesuchten Titels<br>musiker - Musiker- oder Bandname<br>anzahl - Musiker- oder Bandname<br>10 - Anzeige der Top Ten<br>hilfe - Anzeige der Hilfe<br>hilfe2 - Anzeige der erweiterten Hilfe |
 
 The newbot-command generates a token wich must be used, to identify the Bot in your code.
 
@@ -48,7 +48,7 @@ The newbot-command generates a token wich must be used, to identify the Bot in y
 
 `func azure functionapp publish swr1-hit-bot --build remote`
 
-## Config of the Webhook
+## Configure the Webhook
 
 To make the Telegram Bot able to work with the Azure Function, you have to configure the bot to use webhooks (https://core.telegram.org/bots/api#setwebhook). The required step is to configure a URL where the bot can send his messages to. This configuration cannot be done with the BotFather, instead you have to use the API. I created a small python script using the python-telegram-bot module to do the configuration.
 

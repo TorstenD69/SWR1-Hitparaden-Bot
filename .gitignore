@@ -132,6 +132,7 @@ local.settings.json
 # VS Code Artifacts
 .vscode
 azure_functions
+swr1_hitbot.code-workspace
 
 # Misc
 setup.py
